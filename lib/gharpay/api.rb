@@ -11,7 +11,7 @@ module Gharpay
 
     def initialize(username, password, url = nil)
       @creds = {"username" => username, "password" => password }
-      base_uri url if url.present?
+      Base.base_uri url if url.present?
     end
     
     # Validates whether the location with this pincode is serviced by Gharpay
